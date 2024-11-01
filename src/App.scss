@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  table {
+    border-collapse: collapse;
+
+    * {
+      border: 1px solid white;
+      padding: 5px 10px;
+    }
+
+    th {
+      background-color: #747474;
+    }
+
+    .value {
+      background-color: #424242;
+    }
+  }
+
+  form {
+    display: flex;
+    margin-top: 40px;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      gap: 10px;
+
+      input {
+        width: 100px;
+        font-size: 26px;
+      }
+      &:nth-child(3) input {
+        width: 200px;
+      }
+    }
+
+    button {
+      font-size: 26px;
+      padding: 10px 40px;
+      border-radius: 15px;
+    }
+  }
+}
